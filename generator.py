@@ -44,9 +44,11 @@ while count < max_count:
 
     print(f"{Fore.WHITE}Sent:")
     print(f"  {Fore.CYAN}sensor_id{Fore.RESET}: {Fore.GREEN}{data['sensor_id']}")
-    print(f"  {Fore.CYAN}temperature{Fore.RESET}: {Fore.RED}{data['temperature']:.2f}")
+    print(
+        f"  {Fore.CYAN}temperature{Fore.RESET}: {Fore.MAGENTA}{data['temperature']:.2f}"
+    )
     print(f"  {Fore.CYAN}humidity{Fore.RESET}: {Fore.MAGENTA}{data['humidity']:.2f}")
-    print(f"  {Fore.CYAN}timestamp{Fore.RESET}: {Fore.BLUE}{data['timestamp']}")
+    print(f"  {Fore.CYAN}timestamp{Fore.RESET}: {Fore.MAGENTA}{data['timestamp']}")
     print(" ")
 
     # Відправка даних у Kafka
